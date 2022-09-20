@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>   
+
+    <!-- Welcome to my portfolio, middle of the screen, animation, keep moving -->
+    <div class="flex flex-col items-center justify-center h-screen">
+        <h1 class="text-6xl font-bold text-center text-blue-500" data-aos="fade-up">Welkom op mijn portfolio</h1>
+        <h2 class="text-2xl font-bold text-center text-white" data-aos="fade-up">Keep scrolling</h2>
+    </div>
+
+    <!-- Make in picture slide in screen when scroling on the right side of the screen -->
+    <div class="flex flex-col items-center justify-right h-screen" style="float: right;">
+        <img src="./img/portret_bw_transparent.jpg" alt="Picture of me" class="fi-picture" data-aos="zoom-in-left">
+        </div>
+    </div>
+
+    <!-- Add text to the left side of the picture -->
+    <div class="fi-text" data-aos="zoom-in-right">
+        <h1 class="text-6xl font-bold text-center text-black">About me</h1>
+        <h2 class="text-2xl font-bold text-center text-black">My name is Bram</h2>
+
+    </div>
+
     
 </body>
 </html>
