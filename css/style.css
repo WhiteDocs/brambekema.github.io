@@ -3,6 +3,6 @@
     height: 400px;
 }
 
-.fi-text {
-    float
+.flex flex-col items-center justify-center h-screen {
+    background-image: url(../img/nature_background.jpg);
 }
