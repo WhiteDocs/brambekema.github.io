@@ -3,72 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Portfolio Bram</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Home - Bram Bekema</title>
 
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-    
-    <!--Navbar-->
-
-    <div class="flex flex-col items-center justify-center h-screen" style="background-image: url(./img/nature_background.jpg);">
-        <h1 class="text-6xl font-bold text-center" data-aos="fade-up" style="color: rgb(78, 152, 255);  text-shadow: 2px 2px 2px #000000;">Welkom op mijn portfolio</h1>
-        <h2 class="text-2xl font-bold text-center text-white" data-aos="fade-up">Bram Bekema</h2>
+    <div class="loader">
+        <div></div>
     </div>
+    
+    <div class="container">
+        <div class="left">
+        <div class="container-left">
+            <img src="./img/bram.png" alt="bram bekema" id="profile">
+        <h3 id="me1">Bram Bekema</h3>
+        <h3 id="me2">Student Software Developer</h3>
+        <H3 id="me3">_</H3>
+        </div>
+        <div class="container-left2">
+            <div class="left-info">
+                <h4>Residence: <span id="distance1">Netherlands</span></h4><br>
+                <h4>City: <span id="distance2">Amersfoort</span></h4><br>
+                <h4>Age: <span id="distance3">18</span></h4>
+            </div>
+        </div>
+        <div class="container-left3">
+            <div class="html">
+            <div id="bar1">
+                <div id="bar1-fill">
+                </div>
+            </div>
+            <h2 id="bar2-text1">HTML</h2>
+            <h2 id="bar2-text2">60%</h2>
+            <div id="bar2">
+                <div id="bar2-fill">
+                </div>
+            </div>
+        </div>
 
-    <div class="flex flex-col items-center justify-right h-screen" style="float: right;">
-        <img src="./img/portret_bw_transparent.jpg" alt="Picture of me" class="fi-picture">
+        <div class="css">
+            <div id="bar3">
+                <div id="bar3-fill">
+                </div>
+            </div>
+            <h2 id="bar4-text1">CSS</h2>
+            <h2 id="bar4-text2">40%</h2>
+            <div id="bar4">
+                <div id="bar4-fill">
+                </div>
+            </div>
+        </div>
+
+        <div class="js">
+            <div id="bar5">
+                <div id="bar5-fill">
+                </div>
+            </div>
+            <h2 id="bar6-text1">JavaScript</h2>
+            <h2 id="bar6-text2">10%</h2>
+            <div id="bar6">
+                <div id="bar6-fill">
+                </div>
+            </div>
+        </div>
+
+        <div class="php">
+            <div id="bar7">
+                <div id="bar7-fill">
+                </div>
+            </div>
+            <h2 id="bar8-text1">PHP</h2>
+            <h2 id="bar8-text2">2%</h2>
+            <div id="bar8">
+                <div id="bar8-fill">
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+        <div class="container-right">
+            <div class="container-1">
+                <div class="container-1-1">
+                    <div class="container-1-2">
+                        <h2>Discover my work!</h2>
+                        <h3 id="containerh3"> &lt;<span id="span-code">code</span>&gt; Build with passion! &lt;<span id="span-code">/code</span>&gt; </h3>
+                    </div>
+                </div>
+                <h2 class="experience">2+ <span class="experience-span">Years Expierence</span></h2>
+            </div>
+            <div class="container-2">
+                <h1>Contaienr 2</h1>
+            </div>
         </div>
     </div>
 
-    <div class="fi-text" data-aos="zoom-in-right">
-        <h1 class="text-6xl font-bold text-center text-black">About me</h1>
-        <h2 class="text-2xl font-bold text-center text-black">Mijn naam is Bram Bekema en ik ben 18 jaar. Ik zit op ROC Midden Nederland en doe daar de opleiding software developer deze opleiding duurt 3 jaar waarvan, je intotaal 1 jaar stage loopt dat doe je in leerjaar 2 en 3.</h2>
-
-        <h1 class="text-6xl font-bold text-center text-black">Hobby's</h1>
-        <h2 class="text-2xl font-bold text-center text-black">Mijn hobby's zijn gamen, programmeren en met vrienden zijn. Ik speel graag games zoals: GTA, Minecraft, LOL en nog veel meer. Ik programmeer graag daarom doe ik ook deze opleiding. Ik ben graag buiten met vrienden of lekker op de bank hangen met hun.</h2>
-    </div>
-
-    <div class="fi-text" data-aos="zoom-in-left">
-        <h1 class="text-6xl font-bold text-center text-black">Skills</h1>
-        <h2 class="text-2xl font-bold text-center text-black">Ik heb de volgende skills: HTML, CSS, JavaScript, PHP, MySQL, C# en nog veel meer.</h2>
-
-        <h1 class="text-6xl font-bold text-center text-black">Contact</h1>
-        <h2 class="text-2xl font-bold text-center text-black">Mijn contact gegevens zijn: <br> Email:
-            <a href="mailto:bekemabram@gmail.com">bekemabram@gmail.com</a>
-            <br> Telefoonnummer: +31651639225</h2>
-    </div>
-
-    <div class="flex flex-col items-center justify-center h-screen" style="background-image: url(./img/nature_background.jpg);">
-        <h1 class="text-6xl font-bold text-center" data-aos="fade-up" style="color: rgb(78, 152, 255);  text-shadow: 2px 2px 2px #000000;">Radio GaGa</h1>
-        <h2 class="text-2xl font-bold text-center text-white" data-aos="fade-up">Project 1</h2>
-        <h2 class="text-2xl font-bold text-center text-white" data-aos="fade-up">↓↓↓</h2>
-    </div>
-
-    <div class="flex flex-col items-center justify-center h-screen">
-        <a href="http://574520.klas4s22.mid-ica.nl/radiogaga/"> 
-            <img alt="Qries" src="./img/radiogaga.png"
-         width=100%" height="100%">
-        </a>
-        <h1 class="text-6xl font-bold text-center" data-aos="fade-up" style="color: rgb(78, 152, 255);  text-shadow: 2px 2px 2px #000000;"></h1>
-        <h2 class="text-2xl font-bold text-center text-white" data-aos="fade-up"></h2>
-    </div>
-
-    <div class="flex flex-col items-center justify-center h-screen" style="background-image: url(./img/nature_background.jpg);">
-        <h1 class="text-6xl font-bold text-center" data-aos="fade-up" style="color: rgb(78, 152, 255);  text-shadow: 2px 2px 2px #000000;">SOON</h1>
-        <h2 class="text-2xl font-bold text-center text-white" data-aos="fade-up">Project 2</h2>
-    </div>
+    <script>
+        $(window).on('load',function(){
+            $('.loader').fadeOut(1000)
+        })
+    </script>
 
 </body>
 </html>
